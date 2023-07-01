@@ -26,3 +26,10 @@ lowerCase.toUpperCase();
 upperCase.toUpperCase();
 numChar.toUpperCase();
 specChar.toUpperCase();
+function generatePassword() {
+  if(charLength< 8 || charLength>128){
+    var tryAgain = "Character length must be between 8-128 characters. Please try again by refreshing";
+    return tryAgain
+  }
+  
+  }
