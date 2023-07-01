@@ -28,10 +28,22 @@ upperCase.toUpperCase();
 numChar.toUpperCase();
 specChar.toUpperCase();
 function generatePassword() {
+  var tryAgain = "Character length must be between 8-128 characters. Please try again by refreshing";
   if(charLength< 8 || charLength>128){
-    var tryAgain = "Character length must be between 8-128 characters. Please try again by refreshing";
+   
     return tryAgain
   }
-  
-  
+  // if(lowerCase="YES"){
+  //   for(var i=0; i< charLength;i++) {
+  //     var lowerPassword=lettersLower[Math.floor(Math.random() * charLength)]
+  //   }
+  //   return tryAgain
+  // }
+ 
   }
+  var randomLowerletter=lettersLower[Math.floor(Math.random() * lettersLower.length)];
+  var randomUpperLetter=lettersUpper[Math.floor(Math.random()*lettersUpper.length)];
+  var randomNumber= numbers[Math.floor(Math.random()*numbers.length)];
+  var randomSpecial= special[Math.floor(Math.random()*special.length)];
+  console.log(randomSpecial);
+  
