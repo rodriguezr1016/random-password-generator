@@ -17,7 +17,7 @@ var lettersLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 var lettersUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var special = ["!", "@", "#", "$", "%", "&", "*", "+"];
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-var possibleCharacters = [lettersLower, lettersUpper, special, numbers];
+var possibleCharacters = [lettersLower[Math.floor(Math.random() * lettersLower.length)], numbers[Math.floor(Math.random()*numbers.length)], special[Math.floor(Math.random()*special.length)], lettersUpper[Math.floor(Math.random()*lettersUpper.length)]];
 var charLength = window.prompt("How many characters?");
 var lowerCase = window.prompt("Do you want lower cases? Type Yes or No");
 var upperCase = window.prompt("Do you want upper cases? Type Yes or No");
@@ -41,9 +41,5 @@ function generatePassword() {
   // }
  
   }
-  var randomLowerletter=lettersLower[Math.floor(Math.random() * lettersLower.length)];
-  var randomUpperLetter=lettersUpper[Math.floor(Math.random()*lettersUpper.length)];
-  var randomNumber= numbers[Math.floor(Math.random()*numbers.length)];
-  var randomSpecial= special[Math.floor(Math.random()*special.length)];
-  console.log(randomSpecial);
-  
+  var randomArray= possibleCharacters[Math.floor(Math.random()*possibleCharacters.length)];
+  console.log(randomArray);
